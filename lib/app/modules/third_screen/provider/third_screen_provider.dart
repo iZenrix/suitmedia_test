@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:suitmedia_test/app/modules/third_screen/user_model.dart';
+import 'package:suitmedia_test/app/modules/third_screen/model/user_model.dart';
 
 class UserProvider {
   final String _url = 'https://reqres.in/api/users?page=1&per_page=10';

@@ -1,5 +1,5 @@
-import 'package:suitmedia_test/app/modules/third_screen/third_screen_provider.dart';
-import 'package:suitmedia_test/app/modules/third_screen/user_model.dart';
+import 'package:suitmedia_test/app/modules/third_screen/provider/third_screen_provider.dart';
+import 'package:suitmedia_test/app/modules/third_screen/model/user_model.dart';
 
 class UserRepository {
   final UserProvider _provider = UserProvider();
