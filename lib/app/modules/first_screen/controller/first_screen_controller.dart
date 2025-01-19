@@ -14,6 +14,11 @@ class FirstScreenController extends GetxController {
   }
 
   void checkPalindrome() {
+    if(palindromeController.text.isEmpty){
+      buildDialog('Warning', 'inputPalindrome');
+      return;
+    }
+
     String input = palindromeController.text.replaceAll(' ', '').toLowerCase();
     String reversedInput = input.split('').reversed.join('');
     bool isPalindrome = input == reversedInput;

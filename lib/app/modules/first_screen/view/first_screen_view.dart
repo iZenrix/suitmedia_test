@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:suitmedia_test/app/global_components/custom_button.dart';
-import 'package:suitmedia_test/app/global_components/custom_dialog.dart';
 import 'package:suitmedia_test/app/modules/first_screen/controller/first_screen_controller.dart';
 import 'package:suitmedia_test/app/modules/first_screen/widgets/custom_text_field.dart';
 import 'package:suitmedia_test/app/modules/second_screen/view/second_screen_view.dart';
@@ -61,14 +60,7 @@ class FirstScreenView extends GetView<FirstScreenController> {
                 CustomButton(
                   text: 'CHECK',
                   onPressed: () {
-                    if (controller.palindromeController.text.isEmpty) {
-                      buildDialog(
-                        'Warning',
-                        'Please fill the palindrome field',
-                      );
-                    } else {
-                      controller.checkPalindrome();
-                    }
+                    controller.checkPalindrome();
                   },
                 ),
                 CustomButton(
