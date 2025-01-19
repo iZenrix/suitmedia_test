@@ -36,7 +36,7 @@ class ThirdScreenController extends GetxController {
 
       var fetchedUsers = await repository.getUsers(
         page: currentPage.value,
-        perPage: 8,
+        perPage: 9,
       );
       users.addAll(fetchedUsers);
 
