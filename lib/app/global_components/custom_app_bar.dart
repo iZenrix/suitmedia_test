@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:suitmedia_test/app/core/theme/app_colors.dart';
 
 AppBar buildAppBar({required String title, required Function()? onPressed}) {
   return AppBar(
-    surfaceTintColor: const Color(0xffffffff),
-    backgroundColor: const Color(0xffffffff),
+    surfaceTintColor: AppColors.pureWhite,
+    backgroundColor: AppColors.pureWhite,
     title: Text(
       title,
       style: const TextStyle(

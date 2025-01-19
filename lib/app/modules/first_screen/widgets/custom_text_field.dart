@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:suitmedia_test/app/core/theme/app_colors.dart';
 
 class CustomTextFormField extends StatelessWidget {
   final String hintText;
@@ -10,11 +11,11 @@ class CustomTextFormField extends StatelessWidget {
     this.controller,
   });
 
-  OutlineInputBorder _buildOutlineInputBorder(Color color) {
+  OutlineInputBorder _buildOutlineInputBorder() {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(12),
-      borderSide: BorderSide(
-        color: color,
+      borderSide: const BorderSide(
+        color: AppColors.borderColor,
       ),
     );
   }
@@ -25,20 +26,11 @@ class CustomTextFormField extends StatelessWidget {
       controller: controller,
       decoration: InputDecoration(
         hintText: hintText,
-        filled: true,
-        fillColor: const Color(0xFFE5E5E5),
-        contentPadding: const EdgeInsets.symmetric(
-          horizontal: 16.0,
-          vertical: 8.0,
-        ),
-        border: _buildOutlineInputBorder(const Color(0xFFE2E3E4)),
-        enabledBorder: _buildOutlineInputBorder(const Color(0xFFE2E3E4)),
-        focusedBorder: _buildOutlineInputBorder(const Color(0xFFE2E3E4)),
-        hintStyle: TextStyle(
-          color: const Color(0xff686777).withOpacity(0.36),
-        ),
-        focusedErrorBorder: _buildOutlineInputBorder(const Color(0xFFE2E3E4)),
-        errorBorder: _buildOutlineInputBorder(const Color(0xFFE2E3E4)),
+        border: _buildOutlineInputBorder(),
+        enabledBorder: _buildOutlineInputBorder(),
+        focusedBorder: _buildOutlineInputBorder(),
+        focusedErrorBorder: _buildOutlineInputBorder(),
+        errorBorder: _buildOutlineInputBorder(),
       ),
     );
   }
