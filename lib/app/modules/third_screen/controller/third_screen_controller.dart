@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:get/get.dart';
 import 'package:suitmedia_test/app/modules/third_screen/repository/third_screen_repository.dart';
 import 'package:suitmedia_test/app/modules/third_screen/model/user_model.dart';
@@ -46,15 +48,13 @@ class ThirdScreenController extends GetxController {
         final jsonData = await repository.getUsers(page: currentPage.value);
         totalPages.value = jsonData.length;
       }
-
     } catch (e) {
-      print("Error: $e");
+      log("Error: $e");
     } finally {
       isLoading(false);
       isLoadingMore(false);
     }
   }
-
 
   Future<void> refreshUsers() async {
     fetchUsers(isRefresh: true);

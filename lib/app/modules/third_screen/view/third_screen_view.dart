@@ -1,6 +1,7 @@
 import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:suitmedia_test/app/core/theme/app_colors.dart';
 import 'package:suitmedia_test/app/global_components/custom_app_bar.dart';
 import 'package:suitmedia_test/app/modules/third_screen/controller/third_screen_controller.dart';
 
@@ -103,13 +104,13 @@ class ThirdScreenView extends GetView<ThirdScreenController> {
                             style: const TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 16,
-                              color: Color(0xff04021D),
+                              color: AppColors.darkTextColor,
                             ),
                           ),
                           subtitle: Text(
                             user.email,
                             style: const TextStyle(
-                              color: Color(0xff686777),
+                              color: AppColors.hintColor,
                               fontSize: 10,
                             ),
                           ),
