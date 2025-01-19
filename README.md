@@ -1,2 +1,2 @@
 Link build apk:
-https://drive.google.com/drive/folders/1O4TeAY3D18_1i6dvdXn60gFtgdsyDwX_?usp=sharing
+https://drive.google.com/file/d/1Mnqs5hv3jlQzVjawNKgeSrzLBx-J-qIt/view?usp=sharing
