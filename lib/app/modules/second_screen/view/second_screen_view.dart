@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:suitmedia_test/app/core/theme/app_colors.dart';
 import 'package:suitmedia_test/app/global_components/custom_app_bar.dart';
 import 'package:suitmedia_test/app/global_components/custom_button.dart';
 import 'package:suitmedia_test/app/modules/second_screen/controller/second_screen_controller.dart';
@@ -32,7 +33,7 @@ class SecondScreenView extends GetView<SecondScreenController> {
                   'Welcome',
                   style: TextStyle(
                     fontSize: 12,
-                    color: Color(0xff04021D),
+                    color: AppColors.darkTextColor,
                   ),
                 ),
                 Obx(
@@ -40,7 +41,7 @@ class SecondScreenView extends GetView<SecondScreenController> {
                     controller.userName.value,
                     style: const TextStyle(
                       fontSize: 18,
-                      color: Color(0xff04021D),
+                      color: AppColors.darkTextColor,
                       fontWeight: FontWeight.w600
                     ),
                   ),
@@ -56,7 +57,7 @@ class SecondScreenView extends GetView<SecondScreenController> {
                 style: const TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.w600,
-                  color: Color(0xff04021D),
+                  color: AppColors.darkTextColor,
                 ),
               ),
             ),
