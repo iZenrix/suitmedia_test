@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:suitmedia_test/app/core/theme/app_theme.dart';
 import 'package:suitmedia_test/app/routes/app_pages.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
